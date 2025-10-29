@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+</head>
+<body>
+  <h2>Registrar Nuevo Usuario</h2>
+  
+  <form action="/usuarios" method="POST">
+    
+    <input type="hidden" name="_token" value="__CSRF_TOKEN_PLACEHOLDER__">
+    
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+    </div>
+    <div>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="sexo">Sexo:</label>
+      <input type="text" id="sexo" name="sexo" placeholder="f ó m">
+    </div>
+    
+    <button type="submit">Registrar</button>
+  </form>
+
+</body>
+</html>
